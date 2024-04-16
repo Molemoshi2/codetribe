@@ -7,144 +7,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <title>My profile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body
-    style="background: linear-gradient(to bottom, #c74b50 0%, #f57d1f 100%)"
-  >
+  <body>
+    <!--header/ navigation bar-->
     <section>
-      <nav>
-        <img src="/images/logo_200x200.png" height="50" alt="logo" />
-        <!--navigation bar container-->
-        <div
-          style="
-            display: inline;
-            margin-left: 60%;
-            font-size: larger;
-            font-family: sans-serif;
-          "
+      <nav class="navbar fixed-top navbar-expand-lg">
+        <a class="navbar-brand" href="/home">
+          <img
+            class="logo"
+            src="/images/logo_200x200.png"
+            alt="logo"
+            width="80"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <a
-            style="padding: 2%; color: #31363f; text-decoration: none"
-            href="/indeex.html"
-            >Home</a
-          >
-          <a
-            style="padding: 2%; color: #31363f; text-decoration: none"
-            href="/about_me.html"
-            >About Me</a
-          >
-          <a
-            style="padding: 2%; color: #31363f; text-decoration: none"
-            href="/Contact _me.html"
-            >Contact Us</a
-          >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/indeex.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about_me.html">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Contact _me.html">Contact Me</a>
+            </li>
+          </ul>
         </div>
       </nav>
     </section>
-    <div>
-      <div style="width: 35%; float: left; padding: 5%; border: none">
-        <!--<img
-          height="300"
-          style="border-radius: 50%"
-          src="/images/logo_200x200.png"
-          alt="profile-pic"
-        />-->
-        <video
-          style="border: solid #31363f; border-radius: 70%"
-          src="/Media/641f7afbb983f756a214d070e658171d.mp4"
-          height="280"
-          width="400"
-          controls
-          autoplay
-        ></video>
+    <!--first section after navbar-->
+    <section style="margin-top: 10rem; margin-bottom: 4rem">
+      <div style="text-align: center; margin-bottom: 3rem; line-height: 3">
+        <h1 style="display: inline">About</h1>
+        <h1 style="color: orangered; display: inline">Me</h1>
       </div>
-      <div style="display: inline">
-        <hr size="3" />
-        <h1>Molemoshi Shantel Manganyi</h1>
-        <p>
-          <em>Aspiring web developer, data scientist and software engineer</em>
-          at a thriving private company
-        </p>
-        <hr size="3" />
+      <div class="main-container-about">
+        <div class="about-me-child">
+          <img
+            class="about-me-pic"
+            src="/images/IMG-20240125-WA0012.jpg"
+            width="300"
+            height="300"
+            alt=""
+          />
+        </div>
+        <div class="about-me-child">
+          <h1 style="display: inline">SHANTEL MOLEMOSHI</h1>
+          <h1 style="display: inline; color: orangered">MANGANYI</h1>
+          <h2>FRONT-END WEB DEVELOPER</h2>
+          <h3 style="margin-bottom: 3rem">
+            HTML ⏐ CSS ⏐ BOOTSTRAP ⏐ PYTHON ⏐ FLASK ⏐ MySQL
+          </h3>
+          <p style="display: inline">
+            I have Grit, a growth mindset,a leader at heart with great
+            collaboration skills. I am always looking for opportunities to grow
+            and improve my skills. My hobbies include reading, coding and
+            watching basketball from time to time.i am familiar with agile/scrum
+            methodology and i have participated in various group projects. i
+            have also created a Web application for a baking business which will
+            be hosted soon, so far the web-app has database tables for the
+            products in store and tables for those that plan on learning how to
+            bake, a beatifully designed home page and forms
+          </p>
+        </div>
       </div>
-    </div>
-
-    <h3>work experience</h3>
-    <p>no working experience yet</p>
-    <h5>educational backround</h5>
-    <ul>
-      <li>Manaileng primary school</li>
-      <li>mohlopheng secondary school</li>
-      <li>university of limpopo</li>
-      <li>udemy</li>
-      <li>Sololearn</li>
-      <li>Datacamp</li>
-      <ol>
-        <li>100 days of code</li>
-        <li>html and css</li>
-        <li>introduction to data science with python</li>
-        <li>MySql</li>
-        <li>Nemisa masterclases/data science and machine learning</li>
-        <li>Flask</li>
-        <li>introduction to database systems</li>
-        <li>and many more...😂</li>
-      </ol>
-    </ul>
+    </section>
     <hr />
-    <section>
-      <h1 style="text-align: center; margin-top: 8%; font-size: xx-large">
-        Timeline
-      </h1>
-      <table
-        cellspacing="80"
-        style="
-          border: solid;
-          width: 100%;
-          text-align: center;
-          margin-bottom: 7%;
-        "
-      >
-        <!--this table has 4 rows and 2 columns -->
-        <thead>
-          <!--table heading will be in bold to show that they are headings-->
-          <tr>
-            <!--tr stands for table rows-->
-            <th>date</th>
-            <th>school</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!--contents of the table-->
-          <tr>
-            <td>2020</td>
-            <td>lockdown</td>
-          </tr>
-          <tr>
-            <td>2022</td>
-            <td>failled dismally</td>
-          </tr>
-          <tr>
-            <td>2023/24</td>
-            <td>making boss moves</td>
-          </tr>
-        </tbody>
-        <tfoot></tfoot>
+    <!--Second section after navbar-->
+    <section style="margin-top: 4rem; text-align: center">
+      <h1 style="margin-bottom: 3rem">Education</h1>
+
+      <table>
+        <tr>
+          <th>School name</th>
+          <th>Course</th>
+          <th>year</th>
+        </tr>
+        <tr>
+          <td>University of Limpopo</td>
+          <td>Bsc(Mathematical Sciences)</td>
+          <td>2024 (Final Semester)</td>
+        </tr>
+        <tr>
+          <td>DataCamp</td>
+          <td>Intro to data science in Python</td>
+          <td>2023</td>
+        </tr>
+        <tr>
+          <td>Self-taught</td>
+          <td>Web Development</td>
+          <td>2022/24</td>
+        </tr>
+        <tr>
+          <td>Sololearn</td>
+          <td>Introdution to python</td>
+          <td>2023</td>
+        </tr>
+        <tr>
+          <td>Udemy</td>
+          <td>100 days of code with python</td>
+          <td>2024</td>
+        </tr>
+        <tr>
+          <td>Mohlopheng High school</td>
+          <td>Matric</td>
+          <td>2018</td>
+        </tr>
       </table>
     </section>
-    <hr size="3" />
-    <!--
-  footer section
-      -->
-    <footer style="color: #31363f; margin: 5%">
-      <div>
+    <!--Footer section-->
+    <footer>
+      <div class="main-container">
         <!--adresses and social medial links-->
-        <div style="width: 40%; float: left">
-          <h3 style="padding-left: 2.4%">
+        <div>
+          <p style="padding-left: 2.4%">
             Morula place accomodation <br />
             Mamotintane <br />
             Sovenga <br />
             0727
-          </h3>
+          </p>
           <a style="padding: 2%" href="shantelmolemoshi@gmail.com"
             ><img
               height="30"
@@ -157,47 +156,48 @@
             style="padding: 2%"
             href="https://www.facebook.com/shantel.molemoshi.5?mibextid=ZbWKwL"
             ><img
-              height="30"
-              src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_facebook-512.png"
-              alt="facebook logo"
-          /></a>
-          <a
-            style="padding: 2%"
-            href="https://www.linkedin.com/in/molemoshi-shantel-852ab2251/"
-            ><img
-              height="30"
-              src="https://cdn1.iconfinder.com/data/icons/social-networks-3/512/linkedin-512.png"
-              alt="linkedin logo"
-          /></a>
-          <a style="padding: 2%" href="https://github.com/Molemoshi2"
-            ><img
-              height="30"
-              src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-social-github-512.png"
-              alt="github logo"
-          /></a>
-        </div>
-        <!--quick links-->
-        <div style="display: inline; padding: 5%; text-align: center">
-          <br />
-          <h3 style="display: inline">Quick links</h3>
-          <br />
-          <a style="color: #31363f" href="/about_me.html">About Me</a>
-          <br />
-          <a style="color: #31363f" href="/Contact _me.html">Contact Us</a>
-        </div>
-        <!--embeded adress-->
-        <div style="float: inline-end">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.3633755517376!2d29.737791274879584!3d-23.87673007325327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec6c917a5612457%3A0xc6120d9babd33714!2sMorula%20place%20accommodation!5e0!3m2!1sen!2sza!4v1712525509019!5m2!1sen!2sza"
-            width="400"
-            height="200"
-            style="border: solid"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
+            height="30"
+            src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_facebook-512.png"
+            alt="facebook logo"
+        /></a>
+        <a
+          style="padding: 2%"
+          href="https://www.linkedin.com/in/molemoshi-shantel-852ab2251/"
+          ><img
+            height="30"
+            src="https://cdn1.iconfinder.com/data/icons/social-networks-3/512/linkedin-512.png"
+            alt="linkedin logo"
+        /></a>
+        <a style="padding: 2%" href="https://github.com/Molemoshi2"
+          ><img
+            height="30"
+            src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-social-github-512.png"
+            alt="github logo"
+        /></a>
       </div>
-    </footer>
+      <!--quick links-->
+      <div>
+        <br />
+        <p style="display: inline">Quick links</p>
+        <br />
+        <a style="color: #31363f" href="/about_me.html">About Me</a>
+        <br />
+        <a style="color: #31363f" href="/Contact _me.html">Contact Us</a>
+      </div>
+      <!--embeded adress-->
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.3633755517376!2d29.737791274879584!3d-23.87673007325327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ec6c917a5612457%3A0xc6120d9babd33714!2sMorula%20place%20accommodation!5e0!3m2!1sen!2sza!4v1712525509019!5m2!1sen!2sza"
+          width="400"
+          height="200"
+          style="border: solid 2px rgb(7, 2, 77)"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+    <p style="text-align: center;">shantelmolemoshi&#169 2024</p>
+</footer>
   </body>
 </html>
