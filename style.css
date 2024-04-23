@@ -103,3 +103,42 @@ tr:nth-child(even) {
   background-color: orangered;
   color: white;
 }
+
+/*styling the contact me form*/
+.error {
+  color: red;
+  display: none;
+}
+
+form {
+  border: 2px solid orangered;
+  padding: 20px;
+}
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  padding-bottom: 5px;
+}
+textarea {
+  width: 100%;
+  border: 1px solid orangered;
+  outline: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+label {
+  margin-bottom: 6px;
+  display: block;
+}
+button {
+  background-color: #31363f;
+  width: 100px;
+  border: none;
+  color: whitesmoke;
+  height: 40px;
+  border-radius: 30px;
+  margin-top: 20px;
+  box-shadow: 0px 5px 15px rgba(28, 0, 181, 0.3);
+}
