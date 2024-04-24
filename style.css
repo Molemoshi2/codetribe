@@ -106,9 +106,9 @@ tr:nth-child(even) {
 
 /*styling the contact me form*/
 .error {
-  color: red;
   display: none;
 }
+
 
 form {
   border: 2px solid orangered;
@@ -129,7 +129,7 @@ textarea {
   box-sizing: border-box;
 }
 label {
-  margin-bottom: 6px;
+  margin-bottom: 30px;
   display: block;
 }
 button {

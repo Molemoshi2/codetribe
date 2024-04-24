@@ -12,7 +12,6 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/codetribe/style.css">
-    <script src="/codetribe/index.js"></script>
   </head>
   <body>
     <section>       <!--navigation bar-->
@@ -57,19 +56,24 @@
           <!--adresses and social medial links-->
           <div class="child-1">
             <h1 style="margin-bottom: 4rem;">Here's how you can get in touch</h1>
-                <form onsubmit="handleFormSubmit(event)"
+                <form id="myform" onsubmit="HandleEventSubmit(event)"
                 action="https://formspree.io/f/mnqeloob"
                 method="POST"
               >
+                <label type="name">
+                  Your name:
+                  <input id="fname" type="text" name="name">
+                  <span style="color: red;" class="error" id="name_error">input name</span>
+                </label>
                 <label>
                   Your email:
                   <input id="email" type="email" name="email">
-                  <span class="error" id="Email-span">Email is invalid</span>
+                  <span style="color: red;" class="error" id="Email-span">Email is invalid</span>
                 </label>
                 <label>
                   Your message:
                   <textarea id="message" name="message"></textarea>
-                  <span class="error" id="message-span">message is required</span>
+                  <span style="color: red;" class="error" id="message-span">message is required</span>
                 </label>
                 <button type="submit">Send</button>
               </form>
@@ -145,5 +149,6 @@
 </div>
 <p style="text-align: center;">shantelmolemoshi&#169 2024</p>
 </footer>
+<script src="/codetribe/index.js"></script>
   </body>
 </html>
