@@ -19,7 +19,7 @@ function HandleEventSubmit(event)
     // validity of the email entered
     console.log(isnameValid)
     let isEmailValid = false;
-    if (email.value !== '' && email.value.validity.valid)
+    if (email.value !== '')
     {
         isEmailValid = true
     }
